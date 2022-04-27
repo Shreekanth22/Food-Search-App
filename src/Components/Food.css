@@ -1,0 +1,141 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* For Background image */
+body {
+    background-image: url("../assets/foodbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* For heading text */
+.heading h1 {
+    color: rgb(237, 241, 13);
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.heading h3 {
+    color: rgb(35, 220, 230);
+    text-align: center;
+}
+
+/* For Searching box */
+.searchBox {
+    text-align: center;
+    margin-top: 3rem;
+}
+.search-bar {
+    width: 350px;
+    height: 35px;
+    border:none;
+    border-radius: 10px;
+}
+.notSearch {
+    font-size: 20px;
+    color: rgb(209, 128, 128);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* For heading, Cards text, image and containt */
+.card {
+    width: 300px;
+    height: 400px;
+    margin: 1.5rem;
+    background: linear-gradient(to left, rgb(204, 255, 51, 0.5), to left, rgb(255, 255, 255, 0.9));
+    border-radius: 8px;
+    box-shadow: 0 7px 12px rgb(204, 255, 51, 0.5);
+    box-sizing: border-box;
+    overflow: auto;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card .info {
+    color: white;
+    text-align: center;
+}
+
+.card .info h2 {
+    margin: 0;
+    font-weight: 900;
+    margin-top: 15px;
+}
+
+.card .info p {
+    margin: 0;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(204, 255, 51, 0.7), rgb(204, 255, 51, 0.9));
+    transition: 0.2s All;
+}
+
+.card:hover:before {
+    height: 100%;
+
+}
+
+.card:hover {
+    background: linear-gradient(to bottom, rgb(204, 255, 51, 0.7), rgb(204, 255, 51, 0.9));
+}
+
+.card .recipe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: justify;
+    padding: 0.5rem 1rem;
+    display: none;
+    transition: 0.3s all;
+}
+
+.card:hover .recipe {
+    display: block;
+}
+
+.recipe h2 {
+    margin-bottom: 10px;
+}
+
+.recipe img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipe p {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.recipe a {
+    display: block;
+    text-align: center;
+}
